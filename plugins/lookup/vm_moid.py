@@ -35,9 +35,6 @@ EXAMPLES = r"""
 
 - name: lookup MoID of the object
   ansible.builtin.debug: msg="{{ lookup('vmware.vmware_rest.vm_moid', '/my_dc/host/my_cluster/esxi1.test/test_vm1', **connection_args) }}"
-
-- name: lookup MoID of the object inside the path
-  ansible.builtin.debug: msg="{{ lookup('vmware.vmware_rest.vm_moid', '/my_dc/vm/') }}"
 """
 
 
